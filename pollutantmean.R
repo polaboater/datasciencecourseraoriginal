@@ -44,12 +44,3 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
          pollutantmean
     }
 }
-
-append <- function(directory, pollutant, id = 1:332) {
-    x <- vector()
-    for (i in id) {
-        x <- c(x,i)
-    }
-    x
-}
-    
