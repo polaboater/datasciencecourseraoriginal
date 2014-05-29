@@ -4,6 +4,8 @@ best <- function(state,outcome) {
     wd <- getwd()
     dir <- paste(wd,"/","outcome-of-care-measures.csv",sep="")
     data <- read.csv(dir,colClasses="character")
+    
+    #coerce outcome data to numeric
     hA <- as.numeric(data[,11])
     data[,11] <- hA
     hF <- as.numeric(data[,17])
